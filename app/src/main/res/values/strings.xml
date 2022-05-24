@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Profile App</string>
+    <string name="main_My_name">Geancarlo</string>
+    <string name="main_banner">Welcome again! All you need is here</string>
 </resources>
