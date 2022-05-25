@@ -20,7 +20,8 @@
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/banner" />
 
-        <ImageView
+
+        <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/imgLogo"
             android:layout_width="80dp"
             android:layout_height="80dp"
@@ -29,7 +30,9 @@
             android:scaleType="centerCrop"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/imgBanner"
-            app:srcCompat="@drawable/logo" />
+            app:srcCompat="@drawable/logo"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize10Percent"
+            />
 
         <TextView
             android:id="@+id/lblNombre"

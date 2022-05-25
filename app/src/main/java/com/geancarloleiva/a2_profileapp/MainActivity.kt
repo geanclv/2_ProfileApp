@@ -12,13 +12,18 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         //rounding logo corners
-        val myBitmap = BitmapFactory.decodeResource(resources, R.drawable.logo)
+        //hemos reemplazado este código por el uso del componente
+        // "com.google.android.material.imageview.ShapeableImageView"
+        /*val myBitmap = BitmapFactory.decodeResource(resources, R.drawable.logo)
         val imgRounded = RoundedBitmapDrawableFactory.create(resources, myBitmap)
         //imgRounded.cornerRadius = 15f
         imgRounded.isCircular = true
         //obtaining the logo resource from activity
         val imgLogo: ImageView = findViewById(R.id.imgLogo)
         //setting the rounded image
-        imgLogo.setImageDrawable(imgRounded)
+        imgLogo.setImageDrawable(imgRounded)*/
+        /*para esto, reemplazamos el ImageView por ShapeableImageView, y en themes.xml agregamos
+        el stylo "ShapeAppearanceOverlay.App.CornerSize10Percent" que indica que tanto
+        redondeo tendrá la imagen*/
     }
 }
